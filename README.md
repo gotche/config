@@ -1,7 +1,7 @@
 config
 ======
 
-Personal package selection and and config files
+Personal package selection and and config files.
 For that we are going to use a masterless salt minion. 
 
 Install salt minion
