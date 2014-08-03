@@ -2,3 +2,20 @@ config
 ======
 
 Personal package selection and and config files
+For that we are going to use a masterless salt minion. 
+
+Install salt minion
+```
+wget -O install_salt.sh https://bootstrap.saltstack.com
+sudo sh install_salt
+```
+
+
+Run salt on my states
+```
+git clone git@github:/gotche/config.git code/config
+
+cd code/config
+bash config.sh 
+
+```
