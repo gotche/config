@@ -3,6 +3,15 @@ vim:
   pkg:
     - installed
 
+
 {{ grains.home }}/.vimrc:
-  file:
-    - exists
+  file.managed:
+    - source: salt://vim/vimrc
+    - user: {{ grains.user }}
+    - group: {{ grains.user }}
+
+
+vim +PluginInstall +qall:
+  cmd.run:
+    - user: {{ grains.user }}
+
