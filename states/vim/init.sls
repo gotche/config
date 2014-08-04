@@ -9,7 +9,9 @@ vim:
     - source: salt://vim/vimrc
     - user: {{ grains.user }}
     - group: {{ grains.user }}
-
+    - require:
+      - pkg: vim
+      - pkg: python-flake8
 
 https://github.com/gmarik/Vundle.vim.git:
   git.latest:
