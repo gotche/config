@@ -3,6 +3,9 @@ vim:
   pkg:
     - installed
 
+python-flake8:
+  pkg:
+    - installed
 
 {{ grains.home }}/.vimrc:
   file.managed:
