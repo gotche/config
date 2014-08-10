@@ -19,3 +19,5 @@ cd code/config
 bash config.sh 
 
 ```
+
+Sensitive data is stored as pillars. It is encrypted and unencrypted when needed. In order to work with this setup the pillars folder needs to be in ~/pillar 
