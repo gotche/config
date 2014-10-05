@@ -22,6 +22,9 @@ Plugin 'kien/ctrlp.vim'
 " flake8 the code
 Plugin 'nvie/vim-flake8'
 
+" pep8 indentations
+Plugin 'hynek/vim-python-pep8-indent'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -62,5 +65,11 @@ set noswapfile
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set smarttab
 set shiftround
 set expandtab
+set backspace=indent,eol,start
+
+set pastetoggle=<F2>
+
+inoremap jj <Esc>
