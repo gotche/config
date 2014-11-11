@@ -50,6 +50,11 @@ let g:jedi#usages_command = "<leader>u"
 " We/I follow pep8 except the line length crazyness
 let g:flake8_max_line_length=120
 
+" show a mark for each flake8 violation not the windows
+let g:flake8_show_in_file=1
+let g:flake8_show_in_gutter=1
+let g:flake8_show_quickfix=0
+
 " run flake8 on file after saving
 let g:flake8_cmd="/usr/bin/flake8"
 autocmd BufWritePost *.py call Flake8()
