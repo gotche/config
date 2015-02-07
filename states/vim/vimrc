@@ -48,7 +48,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:jedi#usages_command = "<leader>u"
 
 " We/I follow pep8 except the line length crazyness
-let g:flake8_max_line_length=120
+" It is setup in ~/config/flake8
 
 " show a mark for each flake8 violation not the windows
 let g:flake8_show_in_file=1
