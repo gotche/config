@@ -16,6 +16,14 @@ python-flake8:
       - pkg: vim
       - pkg: python-flake8
 
+{{ grains.home }}/.config/flake8:
+  file.managed:
+    - source: salt://flake8/flake8
+    - user: {{ grains.user }}
+    - group: {{ grains.user }}
+    - require:
+      - pkg: python-flake8
+
 https://github.com/gmarik/Vundle.vim.git:
   git.latest:
     - rev: master
