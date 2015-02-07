@@ -10,14 +10,20 @@
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   type = cat-file -t
   dump = cat-file -p
+  pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
   c = clone --recursive
 
 [push]
     default = simple
 
 [github] 
-    user = {{ pillar['git_user'] }} 
-    password = {{ pillar['git_password']}} 
+    user = {{ pillar['git_github_user'] }} 
+    password = {{ pillar['git_github_password']}}
+
+[bitbucket] 
+    user = {{ pillar['git_bitbucket_user'] }} 
+    password = {{ pillar['git_bitbucket_password']}}
+
 [color]
     ui = true
 [color "diff"]

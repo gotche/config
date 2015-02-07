@@ -6,4 +6,4 @@ file_roots:
 
 pillar_roots:
   base:
-    - ${home}/pillar/
+    - ${home}/.pillars/
