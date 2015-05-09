@@ -30,4 +30,5 @@
     whitespace = red reverse
 [core]
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	editor = vim
+    editor = vim
+    excludesfile = {{ grains.home }}/.gitignore_global
