@@ -81,3 +81,4 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 imap jj <Esc>
 nnoremap . :
+nnoremap : .
