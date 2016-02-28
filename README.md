@@ -13,7 +13,7 @@ sudo sh install_salt
 
 Run salt on my states
 ```
-git clone git@github:/gotche/config.git code/config
+git clone https://github.com/gotche/config.git code/config
 
 cd code/config
 bash config.sh 
