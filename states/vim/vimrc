@@ -82,3 +82,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 imap jj <Esc>
 nnoremap . :
 nnoremap : .
+
+noremap cc :s/^/#/<CR>
+noremap rc :s/^#//<CR>
