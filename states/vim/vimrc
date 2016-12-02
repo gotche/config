@@ -83,8 +83,8 @@ set pastetoggle=<F2>
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 imap jj <Esc>
-nnoremap . :
-nnoremap : .
+nnoremap ; :
+nnoremap : ;
 
 noremap cc :s/^/#/<CR>
 noremap rc :s/^#//<CR>
