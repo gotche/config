@@ -33,3 +33,8 @@ https://github.com/gmarik/Vundle.vim.git:
 vim +PluginInstall +qall:
   cmd.run:
     - user: {{ grains.user }}
+
+{{ grains.home }}/.vim/undodir:
+  file.directory:
+    - user: {{ grains.user }}
+    - group: {{ grains.user }}
