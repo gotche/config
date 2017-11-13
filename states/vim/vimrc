@@ -28,6 +28,12 @@ Plugin 'nvie/vim-flake8'
 " pep8 indentations
 Plugin 'hynek/vim-python-pep8-indent'
 
+" surround
+Plugin 'tpope/vim-surround'
+
+" nerdtree
+Plugin 'scrooloose/nerdtree'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
