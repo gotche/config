@@ -65,7 +65,7 @@ let g:flake8_show_in_gutter=1
 let g:flake8_show_quickfix=0
 
 " run flake8 on file after saving
-let g:flake8_cmd="/usr/bin/flake8"
+" let g:flake8_cmd="/usr/bin/flake8"
 autocmd BufWritePost *.py call Flake8()
 
 " remove trailing whitespaces...
