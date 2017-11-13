@@ -95,6 +95,8 @@ nnoremap : ;
 noremap cc :s/^/#/<CR>
 noremap rc :s/^#//<CR>
 
+nnoremap * :set hlsearch<CR>*
+nnoremap # :set hlsearch<CR>#
 
 function RebaseActionToggle()
     let line = getline(".")
