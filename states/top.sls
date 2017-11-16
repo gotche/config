@@ -6,3 +6,5 @@ base:
     - ssh
     - pdb
     - entr
+    - direnv
+    - bashrc
