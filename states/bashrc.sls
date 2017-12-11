@@ -5,6 +5,6 @@
         export PATH="$PYENV_ROOT/bin:$PATH"
         eval "$(pyenv init -)"
         eval "$(pyenv virtualenv-init -)"
-        stty -ixon
+        [[ $- == *i* ]] && stty -ixon
         # direnv
         eval "$(direnv hook bash)"
