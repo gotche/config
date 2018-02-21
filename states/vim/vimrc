@@ -98,6 +98,10 @@ noremap rc :s/^#//<CR>
 nnoremap * :set hlsearch<CR>*
 nnoremap # :set hlsearch<CR>#
 
+" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 function RebaseActionToggle()
     let line = getline(".")
     let result = matchstr(line, "^\\a")
