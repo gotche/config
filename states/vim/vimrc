@@ -13,6 +13,12 @@ Plugin 'gmarik/Vundle.vim'
 
 " my plugins
 
+" surround
+Plugin 'tpope/vim-surround.git'
+
+" repeat
+Plugin 'tpope/vim-repeat.git'
+
 " jedi autocomplete
 Plugin 'davidhalter/jedi-vim'
 
