@@ -37,6 +37,9 @@ Plugin 'hynek/vim-python-pep8-indent'
 " surround
 Plugin 'tpope/vim-surround'
 
+" targets
+Plugin 'wellle/targets.vim'
+
 " nerdtree
 Plugin 'scrooloose/nerdtree'
 
