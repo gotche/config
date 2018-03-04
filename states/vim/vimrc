@@ -98,8 +98,11 @@ imap jj <Esc>
 nnoremap ; :
 nnoremap : ;
 
-noremap cc :s/^/#/<CR>
-noremap rc :s/^#//<CR>
+autocmd FileType python noremap cc :s/^/#/<CR>
+autocmd FileType python noremap rc :s/^#//<CR>
+
+autocmd FileType go noremap cc :s/^/\/\//<CR>
+autocmd FileType go noremap rc :s/^\/\///<CR>
 
 nnoremap * :set hlsearch<CR>*
 nnoremap # :set hlsearch<CR>#
