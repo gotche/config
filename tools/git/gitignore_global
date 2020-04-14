@@ -62,6 +62,3 @@ target/
 
 # pyenv
 .python-version
-
-# direnv
-.envrc
