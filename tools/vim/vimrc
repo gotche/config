@@ -40,6 +40,9 @@ Plugin 'wellle/targets.vim'
 " nerdtree
 Plugin 'scrooloose/nerdtree'
 
+" vim-smoothy
+Plugin 'psliwka/vim-smoothie'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -98,11 +101,13 @@ imap jj <Esc>
 nnoremap ; :
 nnoremap : ;
 
-autocmd FileType python noremap cc :s/^/#/<CR>
-autocmd FileType python noremap rc :s/^#//<CR>
+noremap cc :s/^/#/<CR>
+noremap rc :s/^#//<CR>
 
-autocmd FileType go noremap cc :s/^/\/\//<CR>
-autocmd FileType go noremap rc :s/^\/\///<CR>
+" autocmd FileType python noremap cc :s/^/#/<CR>
+" autocmd FileType python noremap rc :s/^#//<CR>
+" autocmd FileType go noremap cc :s/^/\/\//<CR>
+" autocmd FileType go noremap rc :s/^\/\///<CR>
 
 nnoremap * :set hlsearch<CR>*
 nnoremap # :set hlsearch<CR>#
